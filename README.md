@@ -7,53 +7,70 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Introduction to GitHub
-
-_Get started using GitHub in less than an hour._
-
 </header>
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+# Eco City Builder – README
 
-## Finish
+Project Description
+Eco City Builder is a command-line Java simulation game where players build a city by adding and removing various types of buildings. Each building affects the city’s Energy, Pollution, Happiness, and Well-being. The goal is to create a balanced, sustainable city and unlock different endings based on performance.
 
-_Congratulations, you've completed this course and joined the world of developers!_
+System Requirements
+• Java Development Kit (JDK) 8 or higher  
+• A command-line interface (Command Prompt, PowerShell, Terminal, or Bash)
 
-<img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
+No external libraries or frameworks are required.
 
-Here's a recap of your accomplishments:
+File Structure
+All Java files must be in the same folder:
 
-- You learned about GitHub, repositories, branches, commits, and pull requests.
-- You created a branch, a commit, and a pull request.
-- You merged a pull request.
-- You made your first contribution! :tada:
+Game.java  
+City.java  
+Buildings.java  
+GreenPowerPlant.java  
+CoalPowerPlant.java  
+Park.java  
+Residences.java
+School.java  
+Factory.java  
+PublicTransport.java  
+Shop.java  
+PublicService.java  
 
-### What's next?
+How to Compile the Game (Command Line)
+1. Open Command Prompt or Terminal.
+2. Navigate to the src file in the project folder.
 
-If you'd like to make a profile README, use the quickstart instructions below or follow the instructions in the [Managing your profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) article.
+Example: cd path/to/EcoCity/src
 
-1. Make a new public repository with a name that matches your GitHub username.
-2. Create a file named `README.md` in its root. The "root" means not inside any folder in your repository.
-3. Edit the contents of the `README.md` file.
-4. If you created a new branch for your file, open and merge a pull request on your branch.
-5. Lastly, we'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github).
+3. Compile all Java files with:
+ javac *.java
 
-Check out these resources to learn more or get involved:
+If there are no errors, “.class” files will be generated.
 
-- Are you a student? Check out the [Student Developer Pack](https://education.github.com/pack).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+How to Run the Game
+After compiling, start the game by typing:
+java Game
 
-<footer>
+This should launch the game in the terminal.
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+How to Play
+1.	Select a building type from the menu.
+2.	Select whether to ADD or REMOVE the building.
+3.	Type the number of buildings you select.
+4.	View your  city metrics and decide on any other changes you want to make
+5.	When finished, select the finish option to end the game and to view your city statistics alongside your final ending.
+
+Dependencies
+This project uses only standard Java libraries (java.util.Scanner).
+No external dependencies are required.
+
+Assumptions and Notes
+• All game files must be in the same folder.
+• Building limits are enforced by the City class.
+• Pollution is clamped to never display negative values.
+• Percentages are capped between 0% and 100%.
+• The game is designed to run in a terminal (text-based).
+
 
 ---
 
